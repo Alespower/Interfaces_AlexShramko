@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio formatear tabla</title>
+	<style>
+		/* Añadir estilos de tablas */
+
+		table, th, td
+       {
+           border: 1px solid black;
+           border-collapse: collapse;
+           height: 50px;
+		   width: 75px;
+           vertical-align: bottom;
+		   text-align: center;
+		   padding: 5px;
+       }
+	   .euro, .dolar, .libra, .yen
+	   {
+			background-color: rgb(223, 240, 240);
+			padding-left: 20px;
+	   }
+	   table .par:first-of-type
+	   {
+			background-color: rgb(240, 240, 85);
+	   }
+	   table .par
+	   {
+			background-color: rgb(248, 248, 191);
+	   }
+	   .euro img, .dolar img, .libra img, .yen img
+	   {
+		   position:absolute;
+		   left: 0px;
+		   top: 0px;
+	   }
+	   .euro, .dolar, .libra, .yen
+	   {
+		   position:relative;
+	   }
+	   .cabecera
+	   {
+		background-image: url("imagenes/fondo_gris.gif");
+		background-repeat: no-repeat;
+	   }
+	</style>
+</head>
+<body>
+	<table summary="Tipos de cambio">
+		<thead>
+			<tr class="cabecera"> 
+				<th scope="col">Cambio</th>
+				<th scope="col">Compra</th>
+				<th scope="col">Venta</th>
+				<th scope="col">Máximo</th>
+				<th scope="col">Mínimo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="par">
+				<th scope="row" class="euro"><img src="imagenes/euro.png"><img>Euro/Dolar</th>
+				<td>1.2524</td>
+				<td>1.2527</td>
+				<td>1.2539</td>
+				<td>1.2488</td>
+			</tr>
+			<tr>
+				<th scope="row" class="dolar"><img src="imagenes/dolar.png"><img>Dolar/Yen</th>
+				<td>119.01</td>
+				<td>119.05</td>
+				<td>119.82</td>
+				<td>119.82</td>
+			</tr>
+			<tr class="par">
+				<th scope="row" class="libra"><img src="imagenes/libra.png"><img>Libra/Dolar</th>
+				<td>1.8606</td>
+				<td>1.8611</td>
+				<td>1.8651</td>
+				<td>1.8522</td>
+			</tr>
+			<tr>
+				<th scope="row" class="yen"><img src="imagenes/yen.png"><img>Yen/Euro</th>
+				<td>0.6711</td>
+				<td>0.6705</td>
+				<td>0.6676</td>
+				<td>0.6713</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
