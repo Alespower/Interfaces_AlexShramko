@@ -1,0 +1,91 @@
+#contenedor
+{
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#contenedor div
+{
+    border: 2px solid black;
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    margin: 15px;
+}
+#contenedor :first-child
+{
+    top: 0;
+    left: 0;
+}
+#contenedor :nth-child(2)
+{
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+#contenedor :nth-child(3)
+{
+    top: 0;
+    right: 0;
+}
+
+#contenedor :nth-child(4)
+{
+    top: 0; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom: auto;
+}
+#contenedor :nth-child(5)
+{
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#contenedor :nth-child(6)
+{
+    top: 0; 
+    bottom: 0;
+    right: 0;
+    margin-top: auto; 
+    margin-bottom: auto;
+}
+#contenedor :nth-child(7)
+{
+    bottom: 0;
+    left: 0;
+}
+#contenedor :nth-child(8)
+{
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-right: auto; 
+    margin-left: auto;
+}
+#contenedor :nth-child(9)
+{
+    bottom: 0;
+    right: 0;
+}
+#contenedor :nth-child(4),
+#contenedor :nth-child(5),
+#contenedor :nth-child(6)
+{
+    background-color: rgb(30, 139, 30);
+}
+#contenedor :nth-child(7),
+#contenedor :nth-child(8),
+#contenedor :nth-child(9)
+{
+    background-color: rgb(35, 92, 197);
+}
