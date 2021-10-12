@@ -1,0 +1,39 @@
+#contenedor
+{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 5px;
+}
+#contenedor div
+{ 
+    border: 2px solid black;
+    display: inline-block;
+    height: calc(33% - 9px);
+    width: calc(33% - 11px);
+    margin: 5px;
+    box-sizing: border-box;
+}
+#contenedor :nth-child(4),
+#contenedor :nth-child(5),
+#contenedor :nth-child(6)
+{
+    background-color: rgb(30, 139, 30);
+}
+#contenedor :nth-child(7),
+#contenedor :nth-child(8),
+#contenedor :nth-child(9)
+{
+    background-color: rgb(35, 92, 197);
+}
+#contenedor :nth-child(2),
+#contenedor :nth-child(6)
+{
+    visibility: hidden;
+}
+#contenedor :nth-child(4),
+#contenedor :nth-child(8)
+{
+    display: none;
+}
