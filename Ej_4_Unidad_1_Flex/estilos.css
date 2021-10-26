@@ -1,0 +1,79 @@
+div
+{
+ display: flex;
+}
+.container1
+{
+ background-color: grey;
+ border: 2px solid greenyellow;
+   flex-flow: row wrap;
+   color: white;
+   height: 100px;
+   width: 500px;
+   justify-content:space-around;
+   align-items:flex-start;
+   flex-wrap: wrap-reverse;
+}
+.container2
+{
+ background-color: grey;
+ border: 2px solid greenyellow;
+   flex-flow: row wrap;
+   color: white;
+   height: 100px;
+   width: 500px;
+   justify-content:space-around;
+   align-items:flex-end;
+   flex-wrap: wrap-reverse;
+}
+.container3
+{
+ background-color: grey;
+ border: 2px solid greenyellow;
+   flex-flow: row wrap;
+   color: white;
+   height: 100px;
+   width: 500px;
+   justify-content:space-around;
+   align-items:center;
+   flex-wrap: wrap-reverse;
+}
+.container1 div, .container2 div, .container3 div
+{
+ border: 1px solid white;
+ height: 40px;
+ width: 60px;
+ background-color: teal;
+ justify-content: center;
+ align-items: center;
+}
+.container1 div:nth-child(3)
+{
+   align-self: flex-start;
+   margin-bottom: auto;
+}
+.container2 div:nth-child(3)
+{
+   align-self:center;
+  
+}
+.container3 div:nth-child(1)
+{
+   height: 30%;
+}
+.container3 div:nth-child(2)
+{
+   height: 20%;
+}
+.container3 div:nth-child(3)
+{
+   height: 50%;
+}
+.container3 div:nth-child(4)
+{
+   height: 80%;
+}
+.container3 div:nth-child(5)
+{
+   height: 15%;
+}
