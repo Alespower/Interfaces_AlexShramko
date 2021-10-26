@@ -1,0 +1,43 @@
+div{
+    display: flex;
+}
+#container1 div, #container2 div
+{
+    justify-content: center;
+    align-items: center;
+}
+#container1
+{
+   color: white;
+   height: 300px;
+   width: 500px;
+   background-color: rgb(35, 35, 144);
+   justify-content:space-around;
+   align-items: center;
+   align-content: center;
+   flex-wrap: wrap-reverse;
+   margin-bottom: 10px;
+}
+#container2
+{
+   flex-flow: row wrap;
+   color: white;
+   height: 300px;
+   width: 500px;
+   background-color: rgb(35, 35, 144);
+   justify-content:space-between;
+   align-items:flex-start;
+   flex-wrap: wrap-reverse;
+}
+#container1 div, #container2 div
+{
+ border: 1px solid white;
+ height: 100px;
+ width: 100px;
+ background-color: teal;
+}
+#container2 div:last-child
+{
+   align-self: flex-start;
+   margin-bottom: auto;
+}
