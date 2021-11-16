@@ -1,0 +1,17 @@
+.contenedor
+{
+    display: grid;
+    grid-template-columns: 6em 12em 6em 12em;
+    grid-template-rows: auto auto auto 3em 3em;
+    gap: 10px;
+}
+.contenedor div
+{
+   background-color: rgb(158, 156, 156);
+   border: 1px solid gray;
+}
+.contenedor div.yellow
+{
+   background-color:rgb(255, 208, 0);
+}
+
