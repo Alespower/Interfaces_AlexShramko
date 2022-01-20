@@ -1,0 +1,17 @@
+body {margin:3em 10%; background:rgb(0, 0, 0);}
+		
+.critter:hover 
+{				
+	animation-name: critteroll;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;				
+	animation-fill-mode: both;
+	animation-direction: alternate;	
+}
+			
+@keyframes critteroll 
+{
+	0% {transform: translateX(0) rotate(0);}				
+	100% {transform: translateX(450px) rotate(2turn);}
+}
